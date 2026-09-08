@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class student
+{
+    public:
+    string sname;
+    int apid;
+    
+    student(string sname, int apid)
+    {
+        this->sname = sname;
+        this->apid = apid;       
+    }
+    void display()
+    {
+    cout<<"\n-======Student's Details======-\n";   
+    cout<<"Student's Name is: "<<sname<<endl;
+    cout<<"Student's Application ID is: "<<this->apid<<endl;
+    }
+};
+int main()
+{
+    student s1("Shravan Pol", 007013);
+    s1.display();
+    return 0;
+}
