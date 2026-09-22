@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Employee
+{
+public:
+    string name;
+    int eid;
+    float salary;
+
+    
+    Employee(string name, int eid, float salary)
+    {
+        this->name = name;
+        this->eid = eid;
+        this->salary = salary;
+
+        cout << "======== Constructor is Called ========" << endl;
+    }
+
+    
+    void display()
+    {
+        cout << "Employee's Name is: " << name << endl;
+        cout << "Employee's ID is: " << eid << endl;
+        cout << "Employee's Salary is: " << salary << endl;
+    }
+
+    
+    ~Employee()
+    {
+        cout << "=== Employee Record Removed from Memory (Destructor Called) ===" << endl;
+    }
+};
+
+int main()
+{
+    Employee e1("om gosavi", 7777, 50000);
+
+    e1.display();
+
+    return 0;
+}
