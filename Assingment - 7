@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+class person
+{
+public:
+string name;
+int age;
+int contact;
+
+void display()
+{
+cout<<"information is"<<endl;
+cout<<"candidate name is"<<name<<endl;
+cout<<"candidate age is"<<age<<endl;
+cout<<"candidate contact number is"<<contact<<endl;
+}
+};
+
+class student : public person
+{
+public:
+int roll;
+string branch;
+
+void display1()
+{
+cout<<"student roll is"<<roll<<endl;
+cout<<"student branch is"<<branch<<endl;
+}
+};
+
+int main()
+{
+person p1;
+p1.name="atharva kalbhor";
+p1.age= 18;
+p1.contact= 93094029;
+p1.display();
+
+student s1;
+s1.roll= 37;
+s1.branch="AIML";
+s1.display1();
+return 0;
+}
