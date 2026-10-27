@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+class Result
+{
+public:
+void calculate_average(int a, int b)
+{
+cout << "Average ="<<(a+b)/2.0<<endl;
+}
+void calculate_average(int a, int b, int c)
+{
+cout << "Average ="<<(a+b+c)/3.0<<endl;
+}
+void calculate_average(float a, float b)
+{
+cout << "Average = "<<(a+b)/2<<endl;
+}
+};
+int main()
+{
+Result r;
+r.calculate_average(70, 80);
+r.calculate_average(60, 70, 80);
+r.calculate_average(75.5f, 85.5f);
+return 0;
+}
