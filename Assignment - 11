@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+template <typename T>
+void swapValues(T &a, T &b) {
+T temp = a;
+a = b;
+b = temp;
+}
+int main() {
+
+int emp1 = 101,emp2=202;
+cout<<"Before:"<< emp1<<" "<<emp2<<endl;
+swapValues(emp1, emp2);
+cout<<"After:"<<emp1<<" "<<emp2<<endl;
+
+
+string room1 ="A-12" , room2 = "B-07";
+cout<<"\nBefore:"<<room1<<" "<<room2<<endl;
+swapValues(room1, room2);
+cout <<"After:"<<room1<<" "<<room2<<endl;
+
+
+float p1 = 1.5f, p2 = 3.8f;
+cout <<"\nBefore: "<<p1<< " "<<p2<<endl;
+swapValues(p1, p2);
+cout<<"After:"<<p1<<" "<<p2<<endl;
+return 0;
+}
+
